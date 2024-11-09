@@ -4,7 +4,7 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-let randomNumber = getRandomInt(1, 100);
+let randomNumber = getRandomInt(1, 30);
 
 const inputElement = document.querySelector('input')
 const submitBtn = document.querySelector('.ok')
@@ -25,10 +25,11 @@ submitBtn.addEventListener('click', (e) => {
     } else if (guess < randomNumber) {
         alert("Ви не вгадали. Ваше число надто мале")
     }
+    return;
 })
 
 
 restartBtn.addEventListener('click', (e) => {
-    randomNumber = getRandomInt();
+    randomNumber = getRandomInt(0, 30);
     inputElement.value = "";
 })
