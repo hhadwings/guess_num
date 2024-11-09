@@ -25,7 +25,7 @@ submitBtn.addEventListener('click', (e) => {
 	} else if (guess === randomNumber) {
 		alert('Ви вгадали');
 	} else {
-		alert('Ви не вгадали (лошара)');
+		alert('Ви не вгадали');
 	}
 
 	randomNumber = getRandomInt(minNum, maxNum);
