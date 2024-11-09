@@ -1,0 +1,97 @@
+
+/* .guess {
+    color: white;
+    font-size: 180px;
+    margin-left: 369px;
+    padding-top: 17px;
+} */
+/* .star {
+    padding-top: 36px;
+    margin-left: 960px;
+    position: absolute;
+}
+.second {
+    position: absolute; } */ 
+
+.first {
+    background-color: #1E1E1E;
+    width: 1553px;
+    height: 767px;
+}
+.guess {
+    padding-left: 331px;
+    margin-top: 20px;
+    font-size: 180px;
+    position: absolute;
+    color: white;
+}
+.second {
+    height: 320px;
+    width: 1553px;
+}
+
+.star {
+    padding-top: 50px;
+    padding-left: 820px;
+    position: absolute;
+    height: 180px;
+    width: 195px;
+}
+.star1 {
+    margin-left: 430px;
+    padding-top: 200px;
+    height: 180px;
+    width: 195px;
+    position: absolute;
+}
+.number {
+    color: white;
+    font-size: 180px;
+    position: absolute;
+    margin-left: 600px;
+}
+input {
+    margin-left: 70px;
+    margin-top: 130px;
+    border-radius: 30px;
+    border-color: deeppink;
+    background: transparent;
+    padding: 100px 119px;
+    border-width: 3px;
+    position: absolute;
+    color: white;
+}
+/* .type {
+    margin-top: 200px;
+    margin-left: 100px;
+    font-size: 30px;
+    color: darkgrey;
+} */
+ .ifyou {
+    color: white;
+    margin-top: 130px;
+    margin-left: 500px;
+    font-size: 25px;
+ }
+ .ok {
+    margin-left: 100px;
+    padding: 1px 60px ;
+    border-radius: 30px;
+    background-color: deeppink;
+    border-color: rgb(174, 17, 100);
+ }
+ .restart {
+    margin-left: 30px;
+    border-radius: 30px;
+    padding: 1px 60px ;
+    background-color: deeppink;
+    border-color: rgb(174, 17, 100) ;
+ }
+ .ok:hover {
+    transition: 1s 0.1s;
+    background-color: rgb(96, 8, 55);
+ }
+ .restart:hover {
+    transition: 1s 0.1s;
+    background-color: rgb(96, 8, 55);
+ }
