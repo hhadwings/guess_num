@@ -4,7 +4,10 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-let randomNumber = getRandomInt(1, 30);
+const minNum = 0;
+const maxNum = 30;
+
+let randomNumber = getRandomInt(minNum, maxNum);
 
 const inputElement = document.querySelector('input')
 const submitBtn = document.querySelector('.ok')
@@ -16,6 +19,10 @@ submitBtn.addEventListener('click', (e) => {
         alert("Введіть число!")
         return;
     }
+    
+    if (guess < minNum || guess > maxNum) {
+        alert(`Число повинно бути від ${minNum} до ${maxNum}`)
+    }
 
     if (guess === randomNumber) {
         alert("Ви вгадали")
@@ -23,6 +30,6 @@ submitBtn.addEventListener('click', (e) => {
         alert("Ви не вгадали (лошара)")
     }
     
-    randomNumber = getRandomInt(0, 30);
+    randomNumber = getRandomInt(minNum, maxNum);
     inputElement.value = "";
 })
