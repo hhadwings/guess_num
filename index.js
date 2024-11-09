@@ -8,7 +8,6 @@ let randomNumber = getRandomInt(1, 30);
 
 const inputElement = document.querySelector('input')
 const submitBtn = document.querySelector('.ok')
-const restartBtn = document.querySelector('.restart')
 
 submitBtn.addEventListener('click', (e) => {
     const guess = Number(inputElement.value);
@@ -20,16 +19,10 @@ submitBtn.addEventListener('click', (e) => {
 
     if (guess === randomNumber) {
         alert("Ви вгадали")
-    } else if (guess > randomNumber) {
-        alert("Ви не вгадали. Ваше число надто велике")
-    } else if (guess < randomNumber) {
-        alert("Ви не вгадали. Ваше число надто мале")
+    } else {
+        alert("Ви не вгадали (лошара)")
     }
-    return;
-})
-
-
-restartBtn.addEventListener('click', (e) => {
+    
     randomNumber = getRandomInt(0, 30);
     inputElement.value = "";
 })
