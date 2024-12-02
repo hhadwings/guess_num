@@ -28,6 +28,10 @@ submitBtn.addEventListener('click', (e) => {
 		alert('Ви не вгадали');
 	}
 
+	alert('Правильне число:' +  randomNumber);
+
 	randomNumber = getRandomInt(minNum, maxNum);
 	inputElement.value = '';
 });
+
+
